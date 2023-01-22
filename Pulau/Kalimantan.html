@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../w3.css">
+    <script language='JavaScript'>
+        var txt = "Pulau Kalimantan";
+        var speed = 300;
+        var refresh = null;
+        function action() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresh = setTimeout("action()", speed);
+        } action();
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Vertical -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+        <a href="../Index.html" class="w3-bar-item w3-button w3-teal">Home</a>
+        <a href="../Pulau/Sumatera.html" class="w3-bar-item w3-button w3-teal">Pulau Sumatera</a>
+        <a href="../Pulau/Kalimantan.html" class="w3-bar-item w3-button w3-teal">Pulau Kalimantan</a>
+        <a href="../Pulau/Jawa.html" class="w3-bar-item w3-button w3-teal">Pulau Jawa</a>
+        <a href="../Pulau/Sulawesi.html" class="w3-bar-item w3-button w3-teal">Pulau Sulawesi</a>
+        <a href="../Pulau/Papua.html" class="w3-bar-item w3-button w3-teal">Pulau Papua</a>
+    </div>
+   
+        <!-- Navbar Vertical END -->
+
+        <!-- Navbar Horizontal -->
+        <div id="main">
+        <div class="w3-teal">
+
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+                <img class="w3-container" src="../IMG/pendaki.jpeg" width="100%" height="250px">
+
+                <h1>
+                    <font face="Time New Roman">Gunung Tertinggi di Kalimantan</font>
+                </h1>
+                <div class="w3-bar w3-teal w3-card-4">
+                    <a class="w3-bar-item w3-button w3-orange" onclick="openKota('Kalimantan')">Pulau Kalimantan</a>
+                    <a class="w3-bar-item w3-button w3-orange" onclick="openKota('KalimantanTengah')">Kalimantan
+                        Tengah</a>
+                    <a class="w3-bar-item w3-button w3-cyan" onclick="openKota('KalimantanUtara')">Kalimantan Utara</a>
+                    <a class="w3-bar-item w3-button w3-red" onclick="openKota('KalimantanBarat')">Kalimantan Barat</a>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar Horizontal END -->
+
+        <!-- Isi Navbar Horizontal -->
+        <div id="Kalimantan" class="w3-container kota w3-animate-top" style="display: block;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Pulau Kalimantan</h1>
+                    <hr>
+                    <img class="w3-animate-fading" src="../IMG/Borneo_Topography.png" width="70%" height="500px">
+                </center>
+                <hr>
+                <h3>Kalimantan</h3>
+                <hr>
+                <p>
+                    Kalimantan (toponim: Kalamantan, Calémantan, Kalémantan, Kelamantan, Kilamantan,
+                    Klamantan, Klémantan, K'lemantan, Quallamontan), atau juga disebut Borneo oleh dunia
+                    internasional. Kalimantan adalah pulau terbesar ketiga di dunia yang terletak di sebelah utara Pulau
+                    Jawa dan di sebelah barat Pulau Sulawesi. Pulau Kalimantan dibagi menjadi wilayah Indonesia (73%),
+                    Malaysia (26%), dan Brunei (1%). Pulau Kalimantan terkenal dengan julukan "Pulau Seribu Sungai"
+                    karena banyaknya sungai yang mengalir di pulau ini.
+
+                    Borneo—yang berasal dari nama kesultanan Brunei—adalah nama yang dipakai oleh kolonial Inggris dan
+                    Belanda untuk menyebut pulau ini secara keseluruhan, sedangkan Kalimantan adalah nama yang digunakan
+                    oleh penduduk bagian timur pulau yang sekarang termasuk wilayah Indonesia. Wilayah utara pulau
+                    ini (Sabah, Brunei, Sarawak) untuk Malaysia dan Brunei Darussalam. Sementara untuk Indonesia wilayah
+                    Utara, adalah provinsi Kalimantan Utara.
+
+                    Dalam arti luas "Kalimantan" meliputi seluruh pulau yang juga disebut dengan Borneo, sedangkan dalam
+                    arti sempit Kalimantan hanya mengacu pada wilayah Indonesia.
+                </p>
+            </div>
+        </div>
+
+        <div id="KalimantanTengah" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Kalimantan Tengah</h1>
+                    <hr>
+                    <img src="../IMG/bukitraya.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Bukit Raya</h3>
+                <hr>
+                <p>Bukit Raya atau Gunung Raya adalah sebuah gunung yang terletak di Kabupaten Katingan,
+                    Provinsi
+                    Kalimantan Tengah. Gunung ini adalah gunung tertinggi di Kalimantan yang masuk dalam wilayah
+                    Indonesia. Kawasan sekitar Bukit Raya menjadi cagar alam, dan bersama-sama dengan Cagar Alam
+                    Bukit
+                    Baka di Kalimantan Barat merupakan Taman Nasional Bukit Baka-Bukit Raya. </p>
+                <hr>
+                </p>
+
+            </div>
+
+        </div>
+        <div id="KalimantanUtara" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Kalimantan Utara</h1>
+                    <hr>
+                    <img src="../IMG/gunungBatuJamak.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Batu Jamak</h3>
+                <hr>
+                <p>Wilayah Gunung Batu Jamak cukup luas dikarenakan meurpakan gunung tertinggi pertama yang ada
+                    di
+                    wilayah atau kawasan Kalimantan Utara, Bahkan, gunung ini mencakup 3 wilayah sekaligu, ada
+                    Boh
+                    River, lalu ada Kabupaten Malinau dan yang terakhir Agung Baru.
+                     
+                    Gunung ini menjadi salah satu spot yang cukup disenangi pendaki. Hal ini dikarnakan medan
+                    dari
+                    pendakiannya cukup memberikan kejutan dan sensasi tersendiri bagi para pendaki.
+                     
+                    Disebut sebagai gunung tertinggi kedua di Kalimantan, karena gunung tersebut mempunyai
+                    ketinggian
+                    berkisar di angka 2.250 mdpl.
+                </p>
+
+            </div>
+        </div>
+        <div id="KalimantanBarat" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Kalimantan Barat</h1>
+                    <hr>
+                    <img src="../IMG/gunungKalimantanbarat.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Batu Tiban</h3>
+                <hr>
+                <p>Bukit Batu Tiban terletak di Ulu Baleh, Kapit, berhampiran sempadan Sarawak-Kalimantan Barat.
+                    Bukit
+                    Batu Tiban mempunyai ketinggian setinggi 1,850 meter.
+
+                    Pada Julai 2005, satu nahas helikopter Bell 206 Jet Ranger milik Hornbill Skyways yang
+                    terhempas di
+                    Bukit Batu Tiban, Ulu Baleh, mengorbankan juruterbang helikopter Long Ranger, Kapten Razali
+                    Sani,
+                    kakitangan Jabatan Ukur dan Pemetaan Malaysia (JUPEM) cawangan Sarawak, Ramli Jamal dan
+                    Koperal
+                    Empini Karung ditemui mati, manakala Razali Hasan dari JUPEM ditemui selamat.
+
+                    Bukit Batu Tiban mempunyai hutan Dipterokarp Bukit, hutan Dipterokarp Atas dan kawasan hutan
+                    Montane. Terdapat banyak flora di bukit ini yang mempunyai nilai perubatan.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Isi Navbar Horizontal END -->
+
+    <script src="../functionOpen.js" type="text/JavaScript"></script>
+    <script src="../functionKota.js" type="text/JavaScript"></script>
+</body>
+
+
+</html>

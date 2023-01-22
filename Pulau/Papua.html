@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../w3.css">
+    <script language='JavaScript'>
+        var txt = "Pulau Papua";
+        var speed = 300;
+        var refresh = null;
+        function action() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresh = setTimeout("action()", speed);
+        } action();
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Vertical -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+        <a href="../Index.html" class="w3-bar-item w3-button w3-teal">Home</a>
+        <a href="../Pulau/Sumatera.html" class="w3-bar-item w3-button w3-teal">Pulau Sumatera</a>
+        <a href="../Pulau/Kalimantan.html" class="w3-bar-item w3-button w3-teal">Pulau Kalimantan</a>
+        <a href="../Pulau/Jawa.html" class="w3-bar-item w3-button w3-teal">Pulau Jawa</a>
+        <a href="../Pulau/Sulawesi.html" class="w3-bar-item w3-button w3-teal">Pulau Sulawesi</a>
+        <a href="../Pulau/Papua.html" class="w3-bar-item w3-button w3-teal">Pulau Papua</a>
+    </div>
+    <div id="main">
+        <!-- Navbar Vertical END -->
+
+        <!-- Navbar Horizontal -->
+        <div class="w3-teal">
+
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+                <img class="w3-container" src="../IMG/pendaki.jpeg" width="100%" height="250px">
+
+                <h1>
+                    <font face="Time New Roman">Gunung Tertinggi di Papua</font>
+                </h1>
+                <div class="w3-bar w3-teal w3-card-4">
+                    <a class="w3-bar-item w3-button" onclick="openKota('Papua')">Pulau Papua</a>
+                    <a class="w3-bar-item w3-button" onclick="openKota('PapuaTengah')">Papua Tengah</a>
+                    <a class="w3-bar-item w3-button" onclick="openKota('PapuaTimur')">Papua Timur</a>
+                    <a class="w3-bar-item w3-button" onclick="openKota('PapuaBarat')">Papua Barat</a>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar Horizontal END -->
+
+        <!-- Isi Navbar Horizontal -->
+        <div id="Papua" class="w3-container kota w3-animate-right" style="display: block;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Pulau Papua</h1>
+                    <hr>
+                    <img class="w3-animate-fading" src="../IMG/New_Guinea_Topography.png" width="70%" height="500px">
+                </center>
+                <hr>
+                <h3>Papua</h3>
+                <hr>
+                <p>
+                    Papua atau dikenal oleh dunia internasional dengan sebutan Guinea Baru atau Nugini (bahasa Inggris:
+                    New Guinea, Tok Pisin: Niugini; Hiri Motu: Niu Gini) atau yang dulu pernah disebut dengan Irian atau
+                    Irian Jaya, adalah pulau terbesar kedua (setelah Greenland) di dunia yang terletak di sebelah utara
+                    Australia. Pulau ini dibagi menjadi dua wilayah yang bagian baratnya merupakan wilayah Indonesia dan
+                    bagian timurnya merupakan negara Papua Nugini. Di pulau yang bentuknya menyerupai burung cendrawasih
+                    ini terletak gunung tertinggi di Indonesia, yaitu Puncak Jaya (4.884 m). Untuk wilayah Indonesia,
+                    penduduk asli Papua disebut sebagai Orang Asli Papua, yang terdiri dari beragam suku bangsa tersebar
+                    di seluruh kabupaten dan kota.</p>
+            </div>
+        </div>
+
+        <div id="PapuaTengah" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Papua Tengah</h1>
+                    <hr>
+                    <img src="../IMG/PuncakJaya.png" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Puncak Jaya</h3>
+                <hr>
+                <p>Puncak Jaya Wijaya atau Piramida Carstensz ialah sebuah puncak tertinggi yang menjadi bagian dari
+                    Pegunungan Barisan Sudirman yang terdapat di Kabupaten Mimika, Provinsi Papua Tengah, Indonesia.
+                    Puncak Jaya atau Piramida Carstensz mempunyai ketinggian 4.884 mdpl dan di sekitarnya terdapat
+                    gletser dengan nama yang sama yakni gletser Carstensz, satu-satunya gletser tropika di Indonesia,
+                    yang tersisa dan secara perlahan mulai menipis akibat pemanasan global.
+
+                    Puncak ini merupakan gunung tertinggi di Indonesia kawasan Oceania. Puncak Jaya adalah salah satu
+                    dari tujuh puncak tertinggi di dunia. </p>
+
+                <p>Gunung Latimojong merupakan gunung yang tertinggi di Sulawesi Selatan dengan ketinggian 3.478 meter,
+                    puncaknya yang bernama Bulu Rante Mario. Pegunungan Latimojong ini membentang dari selatan ke utara.
+                    Di sebelah barat Gunung Latimojong adalah Kabupaten Enrekang, sebelah utara Kabupaten Tana Toraja,
+                    sebelah selatan adalah daerah Kabupaten Sidenreng Rappang dan area sebelah timur seluruhnya wilayah
+                    Kabupaten Luwu sampai di pinggir pantai Teluk Bone. </p>
+                <hr>
+                <h3>Sejarah</h3>
+                <hr>
+                <p>Dataran tinggi di sekitar puncak awalnya sudah dihuni sebelum adanya kontak dengan bangsa Eropa, dan
+                    puncaknya dikenal sebagai Nemangkawi di Amungkal. Puncak Jaya sebelumnya bernama Piramida Carstensz
+                    setelah penjelajah Belanda Jan Carstenszoon menamainya ketika pertama kali melihat gletser di puncak
+                    gunung pada hari yang cerah pada tahun 1623.
+
+                    Padang salju (gletser) Puncak Jaya berhasil didaki pada awal tahun 1909 oleh seorang penjelajah
+                    Belanda, Hendrikus Albertus Lorentz dengan enam orang suku Kenyah yang direkrut dari Apau Kayan di
+                    Kalimantan Utara. Taman Nasional Lorentz yang juga meliputi Piramida Carstensz, didirikan pada tahun
+                    1919 menyusul laporan ekspedisi ini.
+
+                </p>
+
+            </div>
+
+        </div>
+        <div id="PapuaTimur" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Papua Timur</h1>
+                    <hr>
+                    <img src="../IMG/Puncak_Mandala.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Puncak Mandala</h3>
+                <hr>
+                <p>Puncak Mandala (pada masa penjajahan Belanda dikenal sebagai Julianatop atau Puncak Juliana) adalah
+                    salah satu gunung di Papua, Indonesia. Dengan ketinggian 4.760 m, Puncak Mandala adalah gunung
+                    tertinggi ke-2 di Indonesia setelah Puncak Jaya. Puncak Mandala membentuk bagian Pegunungan Bintang
+                    bagian timur dan berada dekat perbatasan Papua Nugini. </p>
+
+            </div>
+        </div>
+        <div id="PapuaBarat" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Papua Barat</h1>
+                    <hr>
+                    <img src="../IMG/PuncakTriKora.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Puncak TriKora</h3>
+                <hr>
+                <p>Puncak Trikora merupakan sebuah gunung yang terdapat di pulau Papua Barat, Indonesia. Puncak Trikora
+                    mempunyai ketinggian setinggi 4,730 meter.
+
+                    Puncak Trikora mempunyai kawasan hutan Dipterokarp Bukit, hutan Dipterokarp Atas, hutan Montane, dan
+                    Hutan Ericaceous atau hutan gunung.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Isi Navbar Horizontal END -->
+
+    <script src="../functionOpen.js" type="text/JavaScript"></script>
+    <script src="../functionKota.js" type="text/JavaScript"></script>
+</body>
+
+
+</html>

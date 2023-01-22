@@ -1,0 +1,6 @@
+.w3-gray:hover{
+    background-color: green;
+    transition: .5s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px
+}

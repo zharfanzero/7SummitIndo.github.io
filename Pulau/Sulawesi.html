@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../w3.css">
+    <script language='JavaScript'>
+        var txt = "Pulau Sulawesi";
+        var speed = 300;
+        var refresh = null;
+        function action() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresh = setTimeout("action()", speed);
+        } action();
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Vertical -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+        <a href="../Index.html" class="w3-bar-item w3-button w3-teal">Home</a>
+        <a href="../Pulau/Sumatera.html" class="w3-bar-item w3-button w3-teal">Pulau Sumatera</a>
+        <a href="../Pulau/Kalimantan.html" class="w3-bar-item w3-button w3-teal">Pulau Kalimantan</a>
+        <a href="../Pulau/Jawa.html" class="w3-bar-item w3-button w3-teal">Pulau Jawa</a>
+        <a href="../Pulau/Sulawesi.html" class="w3-bar-item w3-button w3-teal">Pulau Sulawesi</a>
+        <a href="../Pulau/Papua.html" class="w3-bar-item w3-button w3-teal">Pulau Papua</a>
+    </div>
+    <div id="main">
+        <!-- Navbar Vertical END -->
+
+        <!-- Navbar Horizontal -->
+
+        <div class="w3-teal">
+
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+                <img class="w3-container" src="../IMG/pendaki.jpeg" width="100%" height="250px">
+
+                <h1>
+                    <font face="Time New Roman">Gunung Tertinggi di Sulawesi</font>
+                </h1>
+                <div class="w3-bar w3-teal w3-card-4">
+                    <a class="w3-bar-item w3-button" onclick="openKota('Sulawesi')">Pulau Sulawesi</a>
+                    <a class="w3-bar-item w3-button" onclick="openKota('SulawesiSelatan')">Sulawesi Selatan</a>
+                    <a class="w3-bar-item w3-button" onclick="openKota('SulawesiUtara')">Sulawesi Utara</a>
+                    <a class="w3-bar-item w3-button" onclick="openKota('SulawesiBarat')">Sulawesi Barat</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Horizontal END -->
+
+        <!-- Isi Navbar Horizontal -->
+        <div id="Sulawesi" class="w3-container kota w3-animate-left" style="display: block;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Pulau Sulawesi</h1>
+                    <hr>
+                    <img class="w3-animate-fading" src="../IMG/Sulawesi_Topography.png" width="70%" height="500px">
+                </center>
+                <hr>
+                <h3>Sulawesi</h3>
+                <hr>
+                <p>
+                    Sulawesi (baca: sulawési, IPA: [sulawesi]), dahulu pernah dikenal sebagai Celebes (/ˈsɛlɪbiːz/ atau
+                    /sɪˈliːbiːz/) adalah sebuah pulau di Indonesia. Sulawesi merupakan salah satu dari empat Kepulauan
+                    Sunda Besar dan merupakan pulau terbesar kesebelas di dunia. Pulau Sulawesi terletak di sebelah
+                    timur Pulau Kalimantan, sebelah barat Kepulauan Maluku, dan sebelah selatan Mindanao dan Kepulauan
+                    Sulu, Filipina. Di Indonesia, hanya Pulau Sumatra, Pulau Kalimantan, dan Papua yang lebih besar luas
+                    wilayahnya serta hanya Pulau Jawa, serta Pulau Sumatra yang memiliki populasi lebih banyak dari
+                    Sulawesi.</p>
+
+                    <p>Bentang alam di Sulawesi mencakup empat semenanjung, yakni Semenanjung Utara, Semenanjung Timur,
+                    Semenanjung Selatan, dan Semenanjung Tenggara. Ada tiga teluk yang memisahkan
+                    semenanjung-semenanjung ini, yaitu Teluk Tomini (Teluk Gorontalo) yang membentang di wilayah
+                    perairan selatan dari Semenanjung Minahasa, Semenanjung Gorontalo, dan Semenanjung Tomini (Tomini
+                    Bocht), Teluk Tolo di antara Semenanjung Timur dan Tenggara, dan Teluk Bone di antara Semenanjung
+                    Selatan dan Tenggara. Selat Makassar membentang di sepanjang sisi barat pulau dan memisahkan pulau
+                    ini dari Kalimantan. Selain itu, Sulawesi juga terletak di antara pertemuan tiga lempeng, yakni
+                    Lempeng Eurasia, Lempeng Indo-Australia, dan Lempeng Pasifik. Hal ini menyebabkan Sulawesi memiliki
+                    struktur tektonik yang sangat kompleks.</p>
+            </div>
+        </div>
+
+        <div id="SulawesiSelatan" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Sulawesi Selatan</h1>
+                    <hr>
+                    <img src="../IMG/Latimojong.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Latimojong</h3>
+                <hr>
+                <p>Gunung Latimojong adalah satu nama gunung di Kabupaten Enrekang, Sulawesi Selatan, Indonesia. Gunung
+                    Latimojong berada di tengah-tengah Sulawesi Selatan. Sebagian besar pengunungan ini terletak di
+                    daerah Kabupaten Enrekang.</p>
+
+                <p>Gunung Latimojong merupakan gunung yang tertinggi di Sulawesi Selatan dengan ketinggian 3.478 meter,
+                    puncaknya yang bernama Bulu Rante Mario. Pegunungan Latimojong ini membentang dari selatan ke utara.
+                    Di sebelah barat Gunung Latimojong adalah Kabupaten Enrekang, sebelah utara Kabupaten Tana Toraja,
+                    sebelah selatan adalah daerah Kabupaten Sidenreng Rappang dan area sebelah timur seluruhnya wilayah
+                    Kabupaten Luwu sampai di pinggir pantai Teluk Bone. </p>
+                <hr>
+
+            </div>
+
+        </div>
+        <div id="SulawesiUtara" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Sulawesi Utara</h1>
+                    <hr>
+                    <img src="../IMG/gunungMahawu.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Mahawu</h3>
+                <hr>
+                <p>Gunung Mahawu adalah gunung berapi stratovolcano yang terletak di timur gunung berapi Gunung
+                    Lokon-Gunung Empung di Sulawesi Utara, Indonesia. Sementara di kejauhan tampak Pulau Manado Tua
+                    dan pulau-pulau di sekitarnya seolah terapung di laut Sulawesi yang sangat luas. Gunung Mahawu
+                    memiliki lebar 180 meter dengan kedalaman kawah 140 meter dan memiliki dua kerucut piroklastik di
+                    lereng utara,sedang tingginya mencapai 1.311 m dpl.</p>
+
+                <p>Orang Minahasa menamai mahawu pada gunung ini karena sering mengeluarkan abu.Selain menyebutnya
+                    dengan mahawu, gunung ini juga disebut gunung Roemengas. Gunung ini pernah mengeluarkan letusan
+                    kecil pada tahun 1789. Kemudian tahun 1994, gunung mahawu juga mengeluarkan letupan lumpur
+                    fumarol dan aktivitas geiser terjadi sepanjang danau kawah yang berwarna kehijau-hijauan dan
+                    terakhir pada tahun 1999. Walau sudah tidak aktif, namun aroma bau belerang yang dibawa angin
+                    masih jelas tercium.[2] Danau kawah gunung ini kini berukuran kecil karena sebagian pinggirnya sudah
+                    mengering. </p>
+                </p>
+
+            </div>
+        </div>
+        <div id="SulawesiBarat" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Sulawesi Barat</h1>
+                    <hr>
+                    <img src="../IMG/gunungGandang.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Gandang Dewata</h3>
+                <hr>
+                <p>Gunung Gandangdewata adalah sebuah gunung yang terletak di Kabupaten Mamasa, Sulawesi Barat. Gunung
+                    ini adalah salah satu gunung tertinggi yang terletak di kawasan Pegunungan Quarlesi[1] dan merupakan
+                    gunung tertinggi kedua di Sulawesi setelah Gunung Latimojong (3.478 mdpl).[1] Gunung ini memiliki
+                    ketinggian 3.037 mdpl dan merupakan daerah tangkapan air terluas yang berada di Provinsi Sulawesi
+                    Barat.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Isi Navbar Horizontal END -->
+
+    <script src="../functionOpen.js" type="text/JavaScript"></script>
+    <script src="../functionKota.js" type="text/JavaScript"></script>
+</body>
+
+
+</html>

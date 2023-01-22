@@ -1,0 +1,266 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../w3.css">
+    <script language='JavaScript'>
+        var txt = "Pulau Jawa";
+        var speed = 300;
+        var refresh = null;
+        function action() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresh = setTimeout("action()", speed);
+        } action();
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Vertical -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+        <a href="../Index.html" class="w3-bar-item w3-button w3-teal">Home</a>
+        <a href="../Pulau/Sumatera.html" class="w3-bar-item w3-button w3-teal">Pulau Sumatera</a>
+        <a href="../Pulau/Kalimantan.html" class="w3-bar-item w3-button w3-teal">Pulau Kalimantan</a>
+        <a href="../Pulau/Jawa.html" class="w3-bar-item w3-button w3-teal">Pulau Jawa</a>
+        <a href="../Pulau/Sulawesi.html" class="w3-bar-item w3-button w3-teal">Pulau Sulawesi</a>
+        <a href="../Pulau/Papua.html" class="w3-bar-item w3-button w3-teal">Pulau Papua</a>
+    </div>
+    <div id="main">
+        <!-- Navbar Vertical END -->
+
+        <!-- Navbar Horizontal -->
+        <div class="w3-teal">
+
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+                <img class="w3-container" src="../IMG/pendaki.jpeg" width="100%" height="250px">
+
+
+                <h1>
+                    <font face="Time New Roman">Gunung Tertinggi di Jawa</font>
+                </h1>
+                <div class="w3-bar w3-teal w3-card">
+                    <a class="w3-bar-item w3-button" onclick="openKota('Jawa')">Pulau Jawa</a>
+                    <a class="w3-bar-item w3-button" onclick="openKota('JawaBarat')">Jawa Barat</a>
+                    <a class="w3-bar-item w3-button" onclick="openKota('JawaTengah')">Jawa Tengah</a>
+                    <a class="w3-bar-item w3-button" onclick="openKota('JawaTimur')">Jawa Timur</a>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar Horizontal END -->
+
+        <!-- Isi Navbar Horizontal -->
+        <div id="Jawa" class="w3-container kota w3-animate-bottom" style="display: block;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Pulau Jawa</h1>
+                    <hr>
+                    <img class="w3-animate-fading" src="../IMG/1200px-Java_Topography.png" width="70%" height="500px">
+                </center>
+                <hr>
+                <h3>Jawa</h3>
+                <hr>
+                <p>
+                    Jawa (Jawa: ꦗꦮ, translit. Jåwå, Sunda: ᮏᮝ, translit. Jawa) adalah sebuah pulau di Indonesia yang
+                    terletak di kepulauan Sunda Besar dan merupakan pulau terluas ke-13 di dunia. Jumlah penduduk di
+                    Pulau Jawa sekitar 150 juta. Pulau Jawa dihuni oleh 60% total populasi Indonesia. Angka ini menurun
+                    jika dibandingkan dengan sensus penduduk tahun 1905 yang mencapai 80,6% dari seluruh penduduk
+                    Indonesia. Penurunan penduduk di Pulau Jawa secara persentase diakibatkan perpindahan penduduk
+                    (transmigrasi) dari Pulau Jawa ke daerah lain di Indonesia. Ibu kota Indonesia adalah Jakarta dan
+                    terletak di Jawa bagian barat laut (tepatnya di ujung paling barat Jalur Pantura).</p>
+
+                    <p>Jawa adalah pulau yang relatif muda dan sebagian besar terbentuk dari aktivitas vulkanik. Deretan
+                    gunung-gunung berapi membentuk jajaran yang terbentang dari timur hingga barat pulau ini, dengan
+                    dataran endapan aluvial sungai di bagian utara. Pulau Jawa dipisahkan oleh selat dengan beberapa
+                    pulau utama, yakni Pulau Sumatra di barat laut, Pulau Kalimantan di utara, Pulau Madura di timur
+                    laut, dan Pulau Bali di sebelah timur. Sementara itu di sebelah selatan pulau Jawa terbentang
+                    Samudra Hindia.</p>
+
+                    Banyak kisah sejarah Indonesia berlangsung di pulau ini. Dahulu, Jawa adalah pusat beberapa kerajaan
+                    Hindu-Buddha, kesultanan Islam, pemerintahan kolonial Hindia Belanda, serta pusat pergerakan
+                    kemerdekaan Indonesia. Pulau ini berdampak besar terhadap kehidupan sosial, politik, dan ekonomi
+                    Indonesia.
+
+                    <p>Sebagian besar penduduknya bertutur dalam tiga bahasa utama. Bahasa Jawa adalah bahasa ibu dari 100
+                    juta penduduk Indonesia, dan sebagian besar penuturnya berdiam di Pulau Jawa. Sebagian besar
+                    penduduk adalah orang-orang dwibahasa, yang berbahasa Indonesia baik sebagai bahasa pertama maupun
+                    kedua. Dua bahasa penting lainnya adalah bahasa Sunda dan bahasa Betawi. Sebagian besar penduduk
+                    Pulau Jawa beragama Islam. Namun tetap terdapat beragam aliran kepercayaan, agama, kelompok etnis,
+                    serta budaya di pulau ini.
+
+                    Pulau ini secara administratif terbagi menjadi enam provinsi, yaitu Jawa Barat, Jawa Tengah, Jawa
+                    Timur, dan Banten, serta dua wilayah khusus, yaitu DKI Jakarta dan DI Yogyakarta.</p>
+                
+            </div>
+        </div>
+
+        <div id="JawaBarat" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Jawa Barat</h1>
+                    <hr>
+                    <img src="../IMG/GunungCiremai.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Ceremai</h3>
+                <hr>
+                <p>Gunung Ceremai (sering kali secara salah kaprah dinamakan Ciremai) Latin: Gunung Ceremé) adalah
+                    gunung
+                    berapi kerucut yang secara administratif termasuk dalam wilayah dua kabupaten, yakni Kabupaten
+                    Kuningan
+                    dan Kabupaten Majalengka, Provinsi Jawa Barat. Posisi geografis puncaknya terletak pada 6° 53' 30"
+                    LS
+                    dan 108° 24' 00" BT, dengan ketinggian 3.078 m di atas permukaan laut. Gunung ini merupakan gunung
+                    tertinggi di Jawa Barat.
+
+                    Gunung ini memiliki kawah ganda. Kawah barat yang beradius 400 m terpotong oleh kawah timur yang
+                    beradius 600 m. Pada ketinggian sekitar 2.900 m dpl di lereng selatan terdapat bekas titik letusan
+                    yang
+                    dinamakan Gowa Walet.
+
+                    Kini G. Ceremai termasuk ke dalam kawasan Taman Nasional Gunung Ciremai (TNGC), yang memiliki luas
+                    total
+                    sekitar 15.000 hektare.
+
+                    Nama gunung ini berasal dari kata cereme (Phyllanthus acidus, sejenis tumbuhan perdu berbuah kecil
+                    dengan rasa masam), namun sering kali disebut Ciremai, suatu gejala hiperkorek akibat banyaknya nama
+                    tempat di wilayah Pasundan yang menggunakan awalan 'ci-' untuk penamaan tempat. </p>
+                <hr>
+                <h3>Vulkanologi dan geologi</h3>
+                <hr>
+                <p>Gunung Ceremai termasuk gunungapi Kuarter aktif, tipe A (yakni, gunungapi magmatik yang masih aktif
+                    semenjak tahun 1600), dan berbentuk strato. Gunung ini merupakan gunungapi soliter, yang dipisahkan
+                    oleh
+                    Zona Sesar Cilacap – Kuningan dari kelompok gunungapi Jawa Barat bagian timur (yakni deretan Gunung
+                    Galunggung, Gunung Guntur, Gunung Papandayan, Gunung Patuha hingga Gunung Tangkuban Perahu) yang
+                    terletak pada Zona Bandung.
+
+                    Ceremai merupakan gunungapi generasi ketiga. Generasi pertama ialah suatu gunungapi Plistosen yang
+                    terletak di sebelah G. Ceremai, sebagai lanjutan vulkanisma Plio-Plistosen di atas batuan Tersier.
+                    Vulkanisma generasi kedua adalah Gunung Gegerhalang, yang sebelum runtuh membentuk Kaldera
+                    Gegerhalang.
+                    Dan vulkanisma generasi ketiga pada kala Holosen berupa G. Ceremai yang tumbuh di sisi utara Kaldera
+                    Gegerhalang, yang diperkirakan terjadi pada sekitar 7.000 tahun yang lalu (Situmorang 1991).
+
+                    Letusan G. Ceremai tercatat sejak 1698 dan terakhir kali terjadi tahun 1937 dengan selang waktu
+                    istirahat terpendek 3 tahun dan terpanjang 112 tahun. Tiga letusan 1772, 1775 dan 1805 terjadi di
+                    kawah
+                    pusat tetapi tidak menimbulkan kerusakan yang berarti. Letusan uap belerang serta tembusan fumarola
+                    baru
+                    di dinding kawah pusat terjadi tahun 1917 dan 1924. Pada 24 Juni 1937 – 7 Januari 1938 terjadi
+                    letusan
+                    freatik di kawah pusat dan celah radial. Sebaran abu mencapai daerah seluas 52,500 km bujursangkar
+                    (Kusumadinata, 1971). Pada tahun 1947, 1955 dan 1973 terjadi gempa tektonik yang melanda daerah
+                    barat
+                    daya G. Ciremai, yang diduga berkaitan dengan struktur sesar berarah tenggara – barat laut. Kejadian
+                    gempa yang merusak sejumlah bangunan di daerah Maja dan Talaga sebelah barat G. Ceremai terjadi
+                    tahun
+                    1990 dan tahun 2001. Getarannya terasa hingga Desa Cilimus di timur G. Ceremai. </p>
+
+            </div>
+
+        </div>
+        <div id="JawaTengah" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Jawa Tengah</h1>
+                    <hr>
+                    <img src="../IMG/gunungslamet.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Slamet</h3>
+                <hr>
+                <p>Gunung Slamet (Jawa: ꦒꦸꦤꦸꦁꦱ꧀ꦭꦩꦼꦠ꧀, translit.gunung slamet) adalah sebuah gunung berapi kerucut tipe A
+                    yang berada di Jawa Tengah, Indonesia. Gunung Slamet memiliki ketinggian 3.432 mdpl dan terletak di
+                    antara 5 kabupaten, yaitu Kabupaten Banyumas, Kabupaten Purbalingga, Kabupaten Brebes, Kabupaten
+                    Tegal
+                    dan Kabupaten Pemalang. Gunung Slamet merupakan gunung dengan suhu rata-rata paling dingin di pulau
+                    Jawa
+                    serta curah hujan tahunan paling tinggi di Indonesia yaitu 8.134,00 milimeter (mm) per tahun.
+
+                    Gunung Slamet adalah gunung tertinggi di Jawa Tengah dan gunung tertinggi kedua di pulau Jawa,
+                    setelah
+                    gunung Semeru. Gunung Slamet cukup populer sebagai tujuan pendakian meskipun medannya dikenal sulit.
+
+                    Kawah IV merupakan kawah terakhir yang masih aktif sampai sekarang, dan terakhir aktif hingga pada
+                    level
+                    siaga medio-2009.Di kaki gunung ini terletak kawasan wisata Baturraden yang menjadi tujuan wisata di
+                    Kabupaten Banyumas, dengan jarak sekitar 15 km dari Kota Purwokerto. Selain itu terdapat wisata alam
+                    berupa pemandian air panas Guci yang berada di sisi utara Gunung Slamet, tepatnya di Kabupaten
+                    Tegal.
+                </p>
+                <hr>
+                <h3>Geologi</h3>
+                <hr>
+                <p>Sebagaimana gunung api lainnya di Pulau Jawa, Gunung Slamet terbentuk akibat subduksi Lempeng
+                    Indo-Australia pada Lempeng Eurasia di selatan Pulau Jawa. Retakan pada lempeng membuka jalur lava
+                    ke
+                    permukaan. Catatan letusan diketahui sejak abad ke-19. Gunung ini aktif dan sering mengalami erupsi
+                    skala kecil. Aktivitas terakhir adalah pada bulan Mei 2009 dan sampai Juni masih terus mengeluarkan
+                    lava
+                    pijar. Sebelumnya ia tercatat meletus pada tahun 1999.
+
+                    Maret 2014 Gunung Slamet menunjukkan aktifitas dan statusnya menjadi Waspada. Berdasarkan data
+                    PVMBG,
+                    aktivitas vukanik Gunung Slamet masih fluktuatif. Setelah sempat terjadi gempa letusan hingga 171
+                    kali
+                    pada Jumat 14 Maret 2014 dari pukul 00.00-12.00 WIB, pada durasi waktu yang sama, tercatat sebanyak
+                    57
+                    kali gempa letusan. Tercatat pula 51 kali embusan. Pemantauan visual, embusan asap putih tebal masih
+                    keluar dari kawah gunung ke arah timur hingga setinggi 1 km. </p>
+
+            </div>
+        </div>
+        <div id="JawaTimur" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <div class="w3-display-container" style="height:300px;">
+                <center>
+                    <h1>Jawa Timur</h1>
+                    <hr>
+                    <img src="../IMG/gunungSemeru.jpg" width="80%" height="300px">
+                </center>
+                <hr>
+                <h3>Gunung Semeru</h3>
+                <hr>
+                <p>Gunung Semeru atau Gunung Meru adalah sebuah gunung berapi kerucut di Jawa Timur, Indonesia. Gunung
+                    Semeru merupakan gunung tertinggi di Pulau Jawa, dengan puncaknya Mahameru, 3.676 meter dari
+                    permukaan laut (mdpl). Gunung ini terbentuk akibat subduksi Lempeng Indo-Australia kebawah Lempeng
+                    Eurasia. Gunung Semeru juga merupakan gunung berapi tertinggi ketiga di Indonesia setelah Gunung
+                    Kerinci di Sumatra dan Gunung Rinjani di Nusa Tenggara Barat.[1] Kawah di puncak Gunung Semeru
+                    dikenal dengan nama Jonggring Saloko.
+
+                    Gunung Semeru secara administratif termasuk dalam wilayah dua kabupaten, yakni Kabupaten Malang dan
+                    Kabupaten Lumajang, Provinsi Jawa Timur. Gunung ini termasuk dalam kawasan Taman Nasional Bromo
+                    Tengger Semeru. Semeru mempunyai kawasan hutan Dipterokarp Bukit, hutan Dipterokarp Atas, hutan
+                    Montane, dan Hutan Ericaceous atau hutan gunung. Posisi geografis Semeru terletak antara 8°06' LS
+                    dan 112°55' BT.
+
+                    Pada tahun 1913 dan 1946 Kawah Jonggring Saloka memiliki kubah dengan ketinggian 3.744,8 m hingga
+                    akhir November 1973. Di sebelah selatan, kubah ini mendobrak tepi kawah menyebabkan aliran lava
+                    mengarah ke sisi selatan meliputi daerah Pronojiwo dan Candipuro di Lumajang.
+                </p>
+                <hr>
+                <h3>Iklim</h3>
+                <hr>
+                <p>Secara umum iklim di wilayah Gunung Semeru termasuk type iklim B (Schmidt dan Ferguson) dengan curah
+                    hujan 927 mm - 5.498 mm per tahun dengan jumlah hari hujan 136 hari/tahun dan musim hujan jatuh pada
+                    bulan November - April. Suhu udara dipuncak Semeru berkisar antara 0 - 4 derajat celsius.
+
+                    Suhu rata-rata berkisar antara 3 °C - 8 °C pada malam dan dini hari, sedangkan pada siang hari
+                    berkisar antara 15 °C - 21 °C. Kadang-kadang pada beberapa daerah terjadi hujan salju kecil pada
+                    saat perubahan musim hujan ke musim kemarau atau sebaliknya. Suhu yang dingin di sepanjang rute
+                    perjalanan ini bukan semata-mata disebabkan oleh udara diam, namun juga didukung oleh kencangnya
+                    angin yang berhembus ke daerah ini menyebabkan udara semakin dingin. </p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Isi Navbar Horizontal END -->
+
+    <script src="../functionOpen.js" type="text/JavaScript"></script>
+    <script src="../functionKota.js" type="text/JavaScript"></script>
+</body>
+
+
+</html>

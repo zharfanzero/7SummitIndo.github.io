@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="biodata.css">
+    <link rel="stylesheet" href="stylehover.css">
+    <script language='JavaScript'>
+        var txt = "Selamat Datang";
+        var speed = 300;
+        var refresh = null;
+        function action() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresh = setTimeout("action()", speed);
+        } action();
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Vertical -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+        <a href="Home.html" class="w3-bar-item w3-button w3-teal">Home</a>
+        <a href="Pulau/Sumatera.html" class="w3-bar-item w3-button w3-teal">Pulau Sumatera</a>
+        <a href="Pulau/Kalimantan.html" class="w3-bar-item w3-button w3-teal">Pulau Kalimantan</a>
+        <a href="Pulau/Jawa.html" class="w3-bar-item w3-button w3-teal">Pulau Jawa</a>
+        <a href="Pulau/Sulawesi.html" class="w3-bar-item w3-button w3-teal">Pulau Sulawesi</a>
+        <a href="Pulau/Papua.html" class="w3-bar-item w3-button w3-teal">Pulau Papua</a>
+    </div>
+    <!-- Navbar Vertical END -->
+    <!-- Navbar Horizontal -->
+    <div id="main">
+        
+        <div class="w3-gray w3-card w3-border">
+            <button class="w3-button w3-gray w3-xlarge" onclick="w3_open()">☰</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('home')">Home</button>
+
+            <div class="w3-dropdown-hover">
+                <button class="w3-button w3-gray w3-sidebar-right">About Me</button>
+                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+                    <button class="w3-bar-item w3-button" onclick="openKota('Biodata')">Biodata</button>
+                    <button href="#" class="w3-bar-item w3-button" onclick="openKota('SocialMedia')">Social
+                        Media</button>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Yang Mengerjakan</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button">Zharfan Asshaukanie Santoso</button>
+                    <button class="w3-bar-item w3-button">10122086</button>
+                    <button class="w3-bar-item w3-button">IF-3</button>
+                </div>
+            </div>
+
+
+            <div class="w3-container"><img class="w3-container" src="IMG/pendaki.jpeg" width="100%" height="250px">
+
+
+            </div>
+        </div>
+        <!-- Navbar Horizontal END -->
+
+        <!-- Isi Navbar Horizontal -->
+        <div id="home" class="w3-container kota w3-center w3-animate-top" style="display:block">
+            <h1>WELCOME TO MY WEB</h1>
+            <H1>
+                <marquee direction="left">Gunung-Gunung Tinggi Di Indonesia</marquee>
+            </H1>
+            <img src="IMG/Foto keni.jpg" width="40%">
+        </div>
+
+        <div id="Biodata" class="w3-container kota w3-center w3-animate-zoom" style="display:none">
+            <h2>Biodata</h2>
+            <div class="container">
+                <div class="card kartu">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="foto">
+                                <img src="IMG/Foto keni.jpg" class="img-thumbnail" alt="" width="150" height="auto">
+                            </div>
+                        </div>
+                        <div class="col-md-8 kertas-biodata">
+                            <div class="biodata">
+                                <table width="100%" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top">
+                                                <table border="0" width="100%"
+                                                    style="padding-left: 2px; padding-right: 13px;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="25%" valign="top" class="textt">Nama</td>
+                                                            <td width="2%">:</td>
+                                                            <td style="color: font-weight bold">Zharfan Asshaukanie
+                                                                Santoso
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="textt">Jenis Kelamin</td>
+                                                            <td>:</td>
+                                                            <td>Laki-Laki</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="textt">Tempat Lahir</td>
+                                                            <td>:</td>
+                                                            <td>Cimahi</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="textt">Tanggal Lahir</td>
+                                                            <td>:</td>
+                                                            <td>01/03/1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="textt">Fakultas</td>
+                                                            <td>:</td>
+                                                            <td>Teknik</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" class="textt">Prodi</td>
+                                                            <td valign="top">:</td>
+                                                            <td>Teknik Informatika</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="SocialMedia" class="w3-container kota w3-center w3-animate-bottom" style="display:none">
+            <h2>My Social Media</h2>
+            <iframe name="frame" height="400px" width="100%"></iframe>
+            <a href="https://www.instagram.com" target="frame"><img src="img/Instagram-Logo.wine.png"
+                    width="10%"><b>Zharfanas</b></a>
+            <a href="https://www.facebook.com" target="frame"><img src="IMG/Facebook-f_Logo-Blue-Logo.wine.png" width="10%">
+                <b>Zharfan Asshaukanie Santoso</b></a>
+
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="functionOpen.js" type="text/JavaScript"></script>
+    <script src="functionKota.js" type="text/JavaScript"></script>
+</body>
+
+
+</html>
